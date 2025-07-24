@@ -133,7 +133,7 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
 
   - **Response Status Code:** Confirms that the API returns a 200 OK status code, indicating that the request was successfully processed.
   - **City Match:** Verifies that the returned weather data corresponds to the specified city ("London").
-  - **Essential Fields:** Checks that the response includes key weather attributes such as: temperature, humidity, weather description and wind speed.
+  - **Essential Fields:** Checks that the response includes key weather attributes such as: temperature, humidity, weather description, and wind speed.
 
 ### Test Results
 
