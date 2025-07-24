@@ -144,12 +144,9 @@ Temperature is available in Fahrenheit, Celsius and Kelvin units.
 For temperature in Fahrenheit use units = imperial;
 For temperature in Celsius use units = metric;
   
-Temperature in Kelvin is used by default, no need to use units parameter in API call.
-In this case: 'metric';
+Temperature in Kelvin is used by default, no need to use units parameter in API call. In this case: 'metric';
 
-  - (Optional) lang: specifies the desired language for the response; Translation is applied to selected fields, including the city name and weather description.
-
-In this case: 'ro'; 
+  - (Optional) lang: specifies the desired language for the response; Translation is applied to selected fields, including the city name and weather description. In this case: 'ro'; 
 
 ### Project Structure 
 
