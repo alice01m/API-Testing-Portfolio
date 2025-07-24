@@ -11,14 +11,15 @@ This project contains automated tests for the WordsAPI /words/{word}/synonyms en
 ### Tested Endpoint
 
 GET https://wordsapiv1.p.rapidapi.com/words/sad/synonyms 
+
 Example tested with the word: sad 
 
 
 ### Request Details
 
-Method: GET 
-URL: https://wordsapiv1.p.rapidapi.com/words/sad/synonyms 
-Headers: 
+**Method:** GET 
+**URL:** https://wordsapiv1.p.rapidapi.com/words/sad/synonyms 
+**Headers:** 
   - x-rapidapi-host: wordsapiv1.p.rapidapi.com
   - x-rapidapi-key: Your API Key (353b4bad4emsh18da20418167ddbp1154adjsn57bf237f2a94)
 
