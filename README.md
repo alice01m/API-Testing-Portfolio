@@ -32,10 +32,10 @@ Headers:
   - **API Test in Postman:** The test is configured in Postman and can be run directly from the application.
   - **The purpose of this test is to verify:**
     
-          - The API returns a successful HTTP status code (200 OK);
-          - The response contains the expected word property with the correct value;
-          - The response contains a non-empty array of synonyms;
-          - Each synonym in the array is a string.
+    - The API returns a successful HTTP status code (200 OK);
+    - The response contains the expected word property with the correct value;
+    - The response contains a non-empty array of synonyms;
+    - Each synonym in the array is a string.
     
 
 ### Steps to run the test
@@ -88,9 +88,9 @@ random = true  (requests a random word)
 
   - **Key Validations:**
     
-      - Verify the response status code is 200 OK;
-      - Confirm that the response contains a non-empty word field;
-      - Ensure the returned word is a string and follows expected format (no numbers or special characters).
+    - Verify the response status code is 200 OK;
+    - Confirm that the response contains a non-empty word field;
+    - Ensure the returned word is a string and follows expected format (no numbers or special characters).
    
 ### Steps to run the test
 
