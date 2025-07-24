@@ -63,7 +63,7 @@ Headers:
 
 ### Example
 
-![API Testing: Get word synonyms (wordsapi)](/assets/images/get-word-synonyms.png)
+![API Testing: Get word synonyms (wordsapi)](images/get-word-synonyms.png)
 
 
 
