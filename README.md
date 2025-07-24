@@ -1,6 +1,6 @@
 # API-Testing-Portfolio
 
-## Get Synonyms for the Word "Sad"
+## Get synonyms for the word "sad"
 
 
 ### Project Overview
@@ -59,6 +59,15 @@ Headers:
 
   - If all tests pass successfully, the API correctly returns a valid list of synonyms for the requested word.
   - Postman will indicate any failed tests and provide information to help identify the issue.
+
+
+### Example
+
+![API Testing: Get word synonyms (wordsapi)](/assets/images/get-word-synonyms.png)
+
+
+
+
 
 
 
