@@ -1,6 +1,6 @@
 # API-Testing-Portfolio
 
-## API Test – Retrieve Synonyms for the Word "Sad" (WordsAPI)
+## API Test – Retrieve synonyms for the word "sad" (WordsAPI)
 
 
 ### Project Overview
