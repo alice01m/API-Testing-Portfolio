@@ -270,12 +270,49 @@ mode: Response format (xml)
 ![API Testing: 5 Day / 3 Hour Forecast by city name (3 parameters)](images/forecast-by-city-name-3-parameters.png) 
 
 
+## API Test: Getting a Random Word from WordsAPI 
 
-  
+### Project Overview
 
+This project contains an automated test for the WordsAPI endpoint that returns a random word. The test verifies that the API responds successfully and returns a valid random word in the expected format.
 
+### Tested Endpoint
 
+GET https://wordsapiv1.p.rapidapi.com/words/
 
+### Parameters
+
+random = true  (requests a random word)
+
+### Project Structure
+
+  - **API Test in Postman:** The test is configured in Postman and can be run directly from the application.
+
+  - **Key Validations:**
+      - Verify the response status code is 200 OK;
+      - Confirm that the response contains a non-empty word field;
+      - Ensure the returned word is a string and follows expected format (no numbers or special characters).
+   
+### Steps to run the test
+
+1. Open Postman and create a new GET request
+2. Enter the endpoint URL with the query parameter random=true
+3. Add the required headers for authentication (x-rapidapi-key)
+4. Click Send to execute the request
+5. Check the response and test results in Postman's Body and Console.
+
+### Test Details 
+
+  - **Response Status Code:** Validates the request succeeds with a 200 OK.
+  - **Word Field:** Ensures the word property is present and contains a valid string representing the random word.
+
+### Test Results
+  - Passing tests confirm the API returns a valid random word with a successful response.
+  - If any tests fail, Postman displays the errors to help identify and resolve the issues.
+
+### Example
+
+![API Testing: Get random word (WORDSAPI)](images/get-random-word.png)
 
 
 
