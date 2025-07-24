@@ -39,10 +39,10 @@ Headers:
 
 ### Steps to run the test
 
-  1. In Postman, insert the Endpoint.
-  2. Add required headers (x-rapidapi-key, x-rapidapi-host).
-  3. Click on the "Send" button to execute the test.
-  4. Review the results in Postman’s console to determine which tests were successful and which failed.
+  1. In Postman, insert the Endpoint
+  2. Add required headers (x-rapidapi-key, x-rapidapi-host)
+  3. Click on the "Send" button to execute the test
+  4. Review the results in Postman’s console to determine which tests were successful and which failed
 
 ### Test Details
 
@@ -127,7 +127,7 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
      - lang: ro (for Romanian language)
   
   3. Click the Send button to execute the request
-  4. Review the test results in Postman’s Tests tab or console, where each validation will indicate pass or fail status.
+  4. Review the test results in Postman’s Tests tab or console, where each validation will indicate pass or fail status
 
 ### Test Details
 
@@ -144,6 +144,71 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
 ### Example
 
 ![API Testing: Get word synonyms (wordsapi)](images/get-current-weather-by-city-name.png)   
+
+
+## API Test: 5 Day / 3 Hour Forecast by city name 
+
+### Project Overview
+
+This project contains an automated API test for the OpenWeatherMap 5-Day/3-Hour Forecast API, which returns weather forecast data for the next 5 days in 3-hour intervals.
+
+The test is designed to verify that the API correctly returns forecast data for Vienna, with essential weather fields present in the response and values formatted according to the provided parameters.
+
+### Tested Endpoint
+
+GET https://api.openweathermap.org/data/2.5/forecast 
+
+### Parameters
+
+q: City name (Vienna) 
+appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf) 
+
+### Project Structure
+
+  -**API Test in Postman:** The request and its automated tests are configured in Postman and can be executed directly. 
+  - **Validation checks include:**
+      - Verifying that the API returns a 200 OK response;
+      - Checking that the response contains forecast data for the correct city (Vienna);
+      - Confirming that forecast data is returned in 3-hour intervals;
+      - Ensuring that each forecast entry contains the following fields:
+          * dt_txt: Date and time of the forecast
+          * main.temp: Temperature
+          * main.humidity: Humidity
+          * weather[0].description: Weather condition description
+       
+### Steps to run the test
+
+1. Open Postman and insert the request endpoint
+2. Set the required query parameters:
+
+  - q: the city name (Vienna)
+  - appid: unique API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+
+3. Click the "Send" button to run the request
+4. Review the test results in Postman’s console to see which tests passed or failed
+
+### Test Details
+
+  -**Response Status Code:** Verifies that the API returns a 200 OK status code, indicating the request was successful;
+  -**City Validation:** Confirms that the city returned in the response matches the requested city (Vienna);
+  -**Forecast Interval Verification:** Ensures the weather forecast data is provided in 3-hour intervals, as specified by the API
+  -**Field Presence:** Checks that each forecast entry contains essential fields: 
+    * dt_txt (date and time of the forecast) 
+    * main.temp (temperature) 
+    * main.humidity (humidity) 
+    * weather[0].description (weather condition description)  
+
+
+  ### Test Results
+
+  - If all validations pass, the API correctly provides accurate and structured forecast data for the specified city.
+  - If any validation fails, Postman will indicate which specific check did not pass and display detailed output to help with debugging.
+  - A successful test confirms that the endpoint returns weather forecasts in the expected 3-hour intervals and includes all required fields such as temperature, humidity, and weather descriptions.
+
+### Example:
+
+![API Testing: Get word synonyms (wordsapi)](images/forecast-data-by-city-name-2-parameters.png)  
+
 
   
 
