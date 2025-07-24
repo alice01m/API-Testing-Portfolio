@@ -143,7 +143,7 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
 
 ### Example
 
-![API Testing: Get word synonyms (wordsapi)](images/get-current-weather-by-city-name.png)   
+![API Testing: Get current weather by city name: https://openweathermap.org/current](images/get-current-weather-by-city-name.png)   
 
 
 ## API Test: 5 Day / 3 Hour Forecast by city name (2 parameters)
@@ -207,7 +207,7 @@ appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
 
 ### Example:
 
-![API Testing: Get word synonyms (wordsapi)](images/forecast-data-by-city-name-2-parameters.png)  
+![API Testing: 5 Day / 3 Hour Forecast by city name (2 parameters)](images/forecast-data-by-city-name-2-parameters.png)  
 
 ## API Test – Retrieve 5 Day / 3 Hour Weather Forecast in XML Format by City Name (OpenWeatherMap)
 
@@ -267,7 +267,7 @@ mode: Response format (xml)
 
 ### Example
 
-![API Testing: Get word synonyms (wordsapi)](images/forecast-data-by-city-name-3-parameters.png) 
+![API Testing: 5 Day / 3 Hour Forecast by city name (3 parameters)](images/forecast-data-by-city-name-3-parameters.png) 
 
 
 
