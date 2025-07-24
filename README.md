@@ -88,9 +88,8 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
 
 ### Parameters
 
-- q: city name; in this case: 'London'
+- q: city name; in this case: "London"
 - appid: unique API key
-- (Optional) mode: defines the response format; Accepted values are xml and html. If this parameter is not specified, the       API defaults to returning the response in JSON format. 
 - (Optional) units: units of measurement;
   
   Temperature is available in Fahrenheit, Celsius and Kelvin units.
@@ -100,10 +99,53 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
   
     *Temperature in Kelvin is used by default, no need to use units parameter in API call.
 
+    *In this case: 'metric';
+
 - (Optional) lang: specifies the desired language for the response; Translation is applied to selected fields, including the city name and weather description.
 
+    *In this case: 'ro'; 
+
+### Project Structure 
+
+  - **API Test in Postman:** The test is configured in Postman and can be executed directly within the application.
+  - **The test verifies the following aspects:**
+      - The API returns a 200 OK status code, confirming that the request was successful;
+      - The response contains valid weather data for London;
+      - Essential fields such as temperature, humidity, and weather description are present in the response;
+      - The temperature is displayed in Celsius, as defined by the units=metric parameter;
+      - The weather description is returned in Romanian, according to the lang=ro parameter.
 
 
+### Steps to run the test
+
+1. In Postman, enter the endpoint URL: https://api.openweathermap.org/data/2.5/weather
+2. Add the following query parameters:
+   
+     - q: London
+     - appid: 1abcb1bd08572a47bf36df6eb8bd6faf
+     - units: metric (for Celsius)
+     - lang: ro (for Romanian language)
+  
+  3. Click the Send button to execute the request
+  4. Review the test results in Postman’s Tests tab or console, where each validation will indicate pass or fail status.
+
+### Test Details
+
+  - **Response Status Code:** Confirms that the API returns a 200 OK status code, indicating that the request was successfully processed.
+  - **City Match:** Verifies that the returned weather data corresponds to the specified city ("London").
+  - **Essential Fields:** Checks that the response includes key weather attributes such as: temperature, humidity, weather description and wind speed.
+
+### Test Results
+
+  - If all validations pass, the API correctly returns accurate and localized weather data for the specified city.
+  - If any validation fails, Postman will clearly indicate which check did not pass and provide relevant details to support   debugging and troubleshooting.
+  - A successful test run confirms the API’s correct behavior regarding response structure, data accuracy, unit format, and   language translation.
+
+### Example
+
+![API Testing: Get word synonyms (wordsapi)](images/get-current-weather-by-city-name.png)   
+
+  
 
 
 
