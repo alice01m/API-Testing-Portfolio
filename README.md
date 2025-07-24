@@ -31,10 +31,11 @@ Headers:
 
   - **API Test in Postman:** The test is configured in Postman and can be run directly from the application.
   - **The purpose of this test is to verify:**
-          - The API returns a successful HTTP status code (200 OK);
-          - The response contains the expected word property with the correct value;
-          - The response contains a non-empty array of synonyms;
-          - Each synonym in the array is a string.
+    
+          * The API returns a successful HTTP status code (200 OK);
+          * The response contains the expected word property with the correct value;
+          * The response contains a non-empty array of synonyms;
+          * Each synonym in the array is a string.
     
 
 ### Steps to run the test
@@ -65,7 +66,6 @@ Headers:
 
 ![API Testing: Get word synonyms (wordsapi)](images/get-word-synonyms.png)
 
-
 ---
 
 ## API Test: Getting a Random Word from WordsAPI 
@@ -88,9 +88,9 @@ random = true  (requests a random word)
 
   - **Key Validations:**
     
-      - Verify the response status code is 200 OK;
-      - Confirm that the response contains a non-empty word field;
-      - Ensure the returned word is a string and follows expected format (no numbers or special characters).
+      * Verify the response status code is 200 OK;
+      * Confirm that the response contains a non-empty word field;
+      * Ensure the returned word is a string and follows expected format (no numbers or special characters).
    
 ### Steps to run the test
 
@@ -155,11 +155,12 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
 
   - **API Test in Postman:** The test is configured in Postman and can be executed directly within the application.
   - **The test verifies the following aspects:**
-      - The API returns a 200 OK status code, confirming that the request was successful;
-      - The response contains valid weather data for London;
-      - Essential fields such as temperature, humidity, and weather description are present in the response;
-      - The temperature is displayed in Celsius, as defined by the units=metric parameter;
-      - The weather description is returned in Romanian, according to the lang=ro parameter.
+    
+      * The API returns a 200 OK status code, confirming that the request was successful;
+      * The response contains valid weather data for London;
+      * Essential fields such as temperature, humidity, and weather description are present in the response;
+      * The temperature is displayed in Celsius, as defined by the units=metric parameter;
+      * The weather description is returned in Romanian, according to the lang=ro parameter.
 
 
 ### Steps to run the test
@@ -214,14 +215,15 @@ appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
 
   -**API Test in Postman:** The request and its automated tests are configured in Postman and can be executed directly. 
   - **Validation checks include:**
-      - Verifying that the API returns a 200 OK response;
-      - Checking that the response contains forecast data for the correct city (Vienna);
-      - Confirming that forecast data is returned in 3-hour intervals;
-      - Ensuring that each forecast entry contains the following fields:
-          * dt_txt: Date and time of the forecast
-          * main.temp: Temperature
-          * main.humidity: Humidity
-          * weather[0].description: Weather condition description
+    
+    * Verifying that the API returns a 200 OK response;
+      * Checking that the response contains forecast data for the correct city (Vienna);
+      * Confirming that forecast data is returned in 3-hour intervals;
+      * Ensuring that each forecast entry contains the following fields:
+          - dt_txt: Date and time of the forecast
+          - main.temp: Temperature
+          - main.humidity: Humidity
+          - weather[0].description: Weather condition description
        
 ### Steps to run the test
 
@@ -240,6 +242,7 @@ appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
   -**City Validation:** Confirms that the city returned in the response matches the requested city (Vienna);
   -**Forecast Interval Verification:** Ensures the weather forecast data is provided in 3-hour intervals, as specified by the API
   -**Field Presence:** Checks that each forecast entry contains essential fields: 
+  
     * dt_txt (date and time of the forecast) 
     * main.temp (temperature) 
     * main.humidity (humidity) 
@@ -278,6 +281,7 @@ mode: Response format (xml)
 
   - **API Test in Postman:** The test is created in Postman and can be executed directly from the interface.
   - **This test verifies the following aspects of the API response:**
+    
       * Verifying that the response status is 200 OK;
       * Confirming that the response format is XML;
       * Checking that the city returned matches the query;
@@ -290,11 +294,13 @@ mode: Response format (xml)
 2. Insert the following endpoint: api.openweathermap.org/data/2.5/forecast?appid=1abcb1bd08572a47bf36df6eb8bd6faf&q=Vienna&mode=xml
 3. Ensure the request method is set to GET
 4. Add or confirm the required query parameters:
+   
      * q: the city name (Vienna)
      * appid: a valid API key (1abcb1bd08572a47bf36df6eb8bd6faf)
      * mode: xml
-5. Click the Send button to execute the request
-6. View the response and verify test results in Postman's Body and Console tabs.
+       
+6. Click the Send button to execute the request
+7. View the response and verify test results in Postman's Body and Console tabs.
 
 ### Test Details
 
@@ -303,6 +309,7 @@ mode: Response format (xml)
   -**City Verification:** Ensures the <name> tag inside the <location> element corresponds to the requested city (Vienna).
   -**Forecast Data Presence:** Checks that the response contains multiple <time> elements representing 3-hour forecast intervals.
   -**Essential Fields Verification:** Each <time> element should include key fields such as:
+  
                                       * <temperature> with appropriate values and units
                                       * <humidity> with appropriate values and units
 
