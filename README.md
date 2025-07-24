@@ -32,10 +32,10 @@ Headers:
   - **API Test in Postman:** The test is configured in Postman and can be run directly from the application.
   - **The purpose of this test is to verify:**
     
-          * The API returns a successful HTTP status code (200 OK);
-          * The response contains the expected word property with the correct value;
-          * The response contains a non-empty array of synonyms;
-          * Each synonym in the array is a string.
+          - The API returns a successful HTTP status code (200 OK);
+          - The response contains the expected word property with the correct value;
+          - The response contains a non-empty array of synonyms;
+          - Each synonym in the array is a string.
     
 
 ### Steps to run the test
@@ -88,9 +88,9 @@ random = true  (requests a random word)
 
   - **Key Validations:**
     
-      * Verify the response status code is 200 OK;
-      * Confirm that the response contains a non-empty word field;
-      * Ensure the returned word is a string and follows expected format (no numbers or special characters).
+      - Verify the response status code is 200 OK;
+      - Confirm that the response contains a non-empty word field;
+      - Ensure the returned word is a string and follows expected format (no numbers or special characters).
    
 ### Steps to run the test
 
@@ -106,6 +106,7 @@ random = true  (requests a random word)
   - **Word Field:** Ensures the word property is present and contains a valid string representing the random word.
 
 ### Test Results
+
   - Passing tests confirm the API returns a valid random word with a successful response.
   - If any tests fail, Postman displays the errors to help identify and resolve the issues.
 
@@ -138,29 +139,28 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
 - appid: unique API key
 - (Optional) units: units of measurement;
   
-  Temperature is available in Fahrenheit, Celsius and Kelvin units.
+Temperature is available in Fahrenheit, Celsius and Kelvin units.
 
-    - For temperature in Fahrenheit use units=imperial;
-    - For temperature in Celsius use units=metric;
+  - For temperature in Fahrenheit use units=imperial;
+  - For temperature in Celsius use units=metric;
   
-    *Temperature in Kelvin is used by default, no need to use units parameter in API call.
-
-    *In this case: 'metric';
+Temperature in Kelvin is used by default, no need to use units parameter in API call.
+In this case: 'metric';
 
 - (Optional) lang: specifies the desired language for the response; Translation is applied to selected fields, including the city name and weather description.
 
-    *In this case: 'ro'; 
+In this case: 'ro'; 
 
 ### Project Structure 
 
   - **API Test in Postman:** The test is configured in Postman and can be executed directly within the application.
   - **The test verifies the following aspects:**
     
-      * The API returns a 200 OK status code, confirming that the request was successful;
-      * The response contains valid weather data for London;
-      * Essential fields such as temperature, humidity, and weather description are present in the response;
-      * The temperature is displayed in Celsius, as defined by the units=metric parameter;
-      * The weather description is returned in Romanian, according to the lang=ro parameter.
+      - The API returns a 200 OK status code, confirming that the request was successful;
+      - The response contains valid weather data for London;
+      - Essential fields such as temperature, humidity, and weather description are present in the response;
+      - The temperature is displayed in Celsius, as defined by the units=metric parameter;
+      - The weather description is returned in Romanian, according to the lang=ro parameter.
 
 
 ### Steps to run the test
@@ -208,18 +208,18 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Parameters
 
-q: City name (Vienna) 
-appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf) 
+- q: City name (Vienna) 
+- appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf) 
 
 ### Project Structure
 
   -**API Test in Postman:** The request and its automated tests are configured in Postman and can be executed directly. 
   - **Validation checks include:**
     
-    * Verifying that the API returns a 200 OK response;
-      * Checking that the response contains forecast data for the correct city (Vienna);
-      * Confirming that forecast data is returned in 3-hour intervals;
-      * Ensuring that each forecast entry contains the following fields:
+    - Verifying that the API returns a 200 OK response;
+    - Checking that the response contains forecast data for the correct city (Vienna);
+    - Confirming that forecast data is returned in 3-hour intervals;
+    - Ensuring that each forecast entry contains the following fields:
           - dt_txt: Date and time of the forecast
           - main.temp: Temperature
           - main.humidity: Humidity
@@ -273,20 +273,20 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Parameters
 
-q: City name (Vienna)
-appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
-mode: Response format (xml)
+- q: City name (Vienna)
+- appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+- mode: Response format (xml)
 
 ### Project Structure
 
   - **API Test in Postman:** The test is created in Postman and can be executed directly from the interface.
   - **This test verifies the following aspects of the API response:**
     
-      * Verifying that the response status is 200 OK;
-      * Confirming that the response format is XML;
-      * Checking that the city returned matches the query;
-      * Ensuring that forecast data is present and structured by 3-hour intervals;
-      * Verifying the presence of essential forecast fields: temperature, humidity.
+    - Verifying that the response status is 200 OK;
+    - Confirming that the response format is XML;
+    - Checking that the city returned matches the query;
+    - Ensuring that forecast data is present and structured by 3-hour intervals;
+    - Verifying the presence of essential forecast fields: temperature, humidity.
 
 ### Steps to run the test
 
@@ -295,9 +295,9 @@ mode: Response format (xml)
 3. Ensure the request method is set to GET
 4. Add or confirm the required query parameters:
    
-     * q: the city name (Vienna)
-     * appid: a valid API key (1abcb1bd08572a47bf36df6eb8bd6faf)
-     * mode: xml
+     - q: the city name (Vienna)
+     - appid: a valid API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+     - mode: xml
        
 6. Click the Send button to execute the request
 7. View the response and verify test results in Postman's Body and Console tabs.
