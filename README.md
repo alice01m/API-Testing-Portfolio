@@ -80,7 +80,7 @@ GET https://wordsapiv1.p.rapidapi.com/words/
 
 ### Parameters
 
-random = true  (requests a random word)
+  - random = true  (requests a random word)
 
 ### Project Structure
 
@@ -135,9 +135,9 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
 
 ### Parameters
 
-- q: city name; in this case: "London"
-- appid: unique API key
-- (Optional) units: units of measurement;
+  - q: city name; in this case: "London"
+  - appid: unique API key
+  - (Optional) units: units of measurement;
   
 Temperature is available in Fahrenheit, Celsius and Kelvin units.
 
@@ -147,7 +147,7 @@ For temperature in Celsius use units = metric;
 Temperature in Kelvin is used by default, no need to use units parameter in API call.
 In this case: 'metric';
 
-- (Optional) lang: specifies the desired language for the response; Translation is applied to selected fields, including the city name and weather description.
+  - (Optional) lang: specifies the desired language for the response; Translation is applied to selected fields, including the city name and weather description.
 
 In this case: 'ro'; 
 
@@ -168,10 +168,10 @@ In this case: 'ro';
 1. In Postman, enter the endpoint URL: https://api.openweathermap.org/data/2.5/weather
 2. Add the following query parameters:
    
-     - q: London
-     - appid: 1abcb1bd08572a47bf36df6eb8bd6faf
-     - units: metric (for Celsius)
-     - lang: ro (for Romanian language)
+    - q: London
+    - appid: 1abcb1bd08572a47bf36df6eb8bd6faf
+    - units: metric (for Celsius)
+    - lang: ro (for Romanian language)
   
   3. Click the Send button to execute the request
   4. Review the test results in Postman’s Tests tab or console, where each validation will indicate pass or fail status
@@ -208,8 +208,8 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Parameters
 
-- q: City name (Vienna) 
-- appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf) 
+  - q: City name (Vienna) 
+  - appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf) 
 
 ### Project Structure
 
@@ -273,9 +273,9 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Parameters
 
-- q: City name (Vienna)
-- appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
-- mode: Response format (xml)
+  - q: City name (Vienna)
+  - appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+  - mode: Response format (xml)
 
 ### Project Structure
 
