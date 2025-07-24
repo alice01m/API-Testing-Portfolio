@@ -207,7 +207,7 @@ appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
 
 ### Example:
 
-![API Testing: 5 Day / 3 Hour Forecast by city name (2 parameters)](images/forecast-data-by-city-name-2-parameters.png)  
+![API Testing: 5 Day / 3 Hour Forecast by city name (2 parameters)](images/forecast-by-city-name-2-parameters.png)  
 
 ## API Test – Retrieve 5 Day / 3 Hour Weather Forecast in XML Format by City Name (OpenWeatherMap)
 
@@ -267,7 +267,7 @@ mode: Response format (xml)
 
 ### Example
 
-![API Testing: 5 Day / 3 Hour Forecast by city name (3 parameters)](images/forecast-data-by-city-name-3-parameters.png) 
+![API Testing: 5 Day / 3 Hour Forecast by city name (3 parameters)](images/forecast-by-city-name-3-parameters.png) 
 
 
 
