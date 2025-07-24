@@ -1,6 +1,6 @@
 # API-Testing-Portfolio
 
-## Get synonyms for the word "sad" on https://www.wordsapi.com/ 
+## API Test – Retrieve Synonyms for the Word "Sad" (WordsAPI)
 
 
 ### Project Overview
@@ -146,7 +146,7 @@ GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap
 ![API Testing: Get word synonyms (wordsapi)](images/get-current-weather-by-city-name.png)   
 
 
-## API Test: 5 Day / 3 Hour Forecast by city name 
+## API Test: 5 Day / 3 Hour Forecast by city name (2 parameters)
 
 ### Project Overview
 
@@ -208,6 +208,67 @@ appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
 ### Example:
 
 ![API Testing: Get word synonyms (wordsapi)](images/forecast-data-by-city-name-2-parameters.png)  
+
+## API Test – Retrieve 5 Day / 3 Hour Weather Forecast in XML Format by City Name (OpenWeatherMap)
+
+### Project Overview
+
+This project contains an API test for the OpenWeatherMap forecast endpoint. The purpose is to verify that the API successfully returns weather forecast data in XML format for a specified city, including key forecast details over a 5-day period with 3-hour intervals.
+
+### Tested Endpoint
+
+GET https://api.openweathermap.org/data/2.5/forecast 
+
+### Parameters
+
+q: City name (Vienna)
+appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+mode: Response format (xml)
+
+### Project Structure
+
+  - **API Test in Postman:** The test is created in Postman and can be executed directly from the interface.
+  - **This test verifies the following aspects of the API response:**
+      * Verifying that the response status is 200 OK;
+      * Confirming that the response format is XML;
+      * Checking that the city returned matches the query;
+      * Ensuring that forecast data is present and structured by 3-hour intervals;
+      * Verifying the presence of essential forecast fields: temperature, humidity.
+
+### Steps to run the test
+
+1. Open Postman and create a new GET request
+2. Insert the following endpoint: api.openweathermap.org/data/2.5/forecast?appid=1abcb1bd08572a47bf36df6eb8bd6faf&q=Vienna&mode=xml
+3. Ensure the request method is set to GET
+4. Add or confirm the required query parameters:
+     * q: the city name (Vienna)
+     * appid: a valid API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+     * mode: xml
+5. Click the Send button to execute the request
+6. View the response and verify test results in Postman's Body and Console tabs.
+
+### Test Details
+
+  -**Response Status Code:** Confirms that the API returns a 200 OK status, indicating a successful request. 
+  -**Response Format:** Validates that the response is in XML format, as specified by the mode=xml parameter.
+  -**City Verification:** Ensures the <name> tag inside the <location> element corresponds to the requested city (Vienna).
+  -**Forecast Data Presence:** Checks that the response contains multiple <time> elements representing 3-hour forecast intervals.
+  -**Essential Fields Verification:** Each <time> element should include key fields such as:
+                                      * <temperature> with appropriate values and units
+                                      * <humidity> with appropriate values and units
+
+### Test Results
+
+  - All tests passing indicates the API returns a valid 5-day, 3-hour weather forecast in XML format.
+  - The status code 200 OK confirms a successful request.
+  - Forecast data includes necessary details like temperature, humidity, and weather conditions.
+  - Failed tests will show specific errors in Postman to help identify and fix issues.
+
+
+### Example
+
+![API Testing: Get word synonyms (wordsapi)](images/forecast-data-by-city-name-3-parameters.png) 
+
 
 
   
