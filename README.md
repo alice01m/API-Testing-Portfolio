@@ -165,10 +165,10 @@ Temperature in Kelvin is used by default, no need to use units parameter in API 
 1. In Postman, enter the endpoint URL: https://api.openweathermap.org/data/2.5/weather
 2. Add the following query parameters:
    
-    - q: London
-    - appid: 1abcb1bd08572a47bf36df6eb8bd6faf
-    - units: metric (for Celsius)
-    - lang: ro (for Romanian language)
+  - q: London
+  - appid: 1abcb1bd08572a47bf36df6eb8bd6faf
+  - units: metric (for Celsius)
+  - lang: ro (for Romanian language)
   
   3. Click the Send button to execute the request
   4. Review the test results in Postman’s Tests tab or console, where each validation will indicate pass or fail status
