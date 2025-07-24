@@ -47,13 +47,13 @@ Headers:
 
 ### Test Details
 
-1. Response Status Code: Verifies that the API returns a 200 / Success status code, indicating the request was successful.
-
-2. Word Property: Ensures that the response contains the property "word" with the correct value (e.g., "sad").
-
-3. Synonyms Array Exists: Confirms that the API returns a non-empty array of synonyms.
-
-4. Synonyms Data Type: Checks that each item in the synonyms array is a string, ensuring data consistency.
+  1. Response Status Code: Verifies that the API returns a 200 / Success status code, indicating the request was successful.
+  
+  2. Word Property: Ensures that the response contains the property "word" with the correct value (e.g., "sad").
+  
+  3. Synonyms Array Exists: Confirms that the API returns a non-empty array of synonyms.
+  
+  4. Synonyms Data Type: Checks that each item in the synonyms array is a string, ensuring data consistency.
 
 
 ### Test Results
@@ -94,11 +94,11 @@ GET https://wordsapiv1.p.rapidapi.com/words/
    
 ### Steps to run the test
 
-1. Open Postman and create a new GET request
-2. Enter the endpoint URL with the query parameter random=true
-3. Add the required headers for authentication (x-rapidapi-key)
-4. Click Send to execute the request
-5. Check the response and test results in Postman's Body and Console.
+  1. Open Postman and create a new GET request
+  2. Enter the endpoint URL with the query parameter random=true
+  3. Add the required headers for authentication (x-rapidapi-key)
+  4. Click Send to execute the request
+  5. Check the response and test results in Postman's Body and Console.
 
 ### Test Details 
 
@@ -162,16 +162,16 @@ Temperature in Kelvin is used by default, no need to use units parameter in API 
 
 ### Steps to run the test
 
-1. In Postman, enter the endpoint URL: https://api.openweathermap.org/data/2.5/weather
-2. Add the following query parameters:
+  1. In Postman, enter the endpoint URL: https://api.openweathermap.org/data/2.5/weather
+  2. Add the following query parameters:
    
-  - q: London
-  - appid: 1abcb1bd08572a47bf36df6eb8bd6faf
-  - units: metric (for Celsius)
-  - lang: ro (for Romanian language)
+      - q: London
+      - appid: 1abcb1bd08572a47bf36df6eb8bd6faf
+      - units: metric (for Celsius)
+      - lang: ro (for Romanian language)
   
-  3. Click the Send button to execute the request
-  4. Review the test results in Postman’s Tests tab or console, where each validation will indicate pass or fail status
+    3. Click the Send button to execute the request
+    4. Review the test results in Postman’s Tests tab or console, where each validation will indicate pass or fail status
 
 ### Test Details
 
@@ -224,14 +224,14 @@ GET https://api.openweathermap.org/data/2.5/forecast
        
 ### Steps to run the test
 
-1. Open Postman and insert the request endpoint
-2. Set the required query parameters:
-
-  - q: the city name (Vienna)
-  - appid: unique API key (1abcb1bd08572a47bf36df6eb8bd6faf)
-
-3. Click the "Send" button to run the request
-4. Review the test results in Postman’s console to see which tests passed or failed
+    1. Open Postman and insert the request endpoint
+    2. Set the required query parameters:
+    
+      - q: the city name (Vienna)
+      - appid: unique API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+    
+    3. Click the "Send" button to run the request
+    4. Review the test results in Postman’s console to see which tests passed or failed
 
 ### Test Details
 
@@ -287,17 +287,17 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Steps to run the test
 
-1. Open Postman and create a new GET request
-2. Insert the following endpoint: api.openweathermap.org/data/2.5/forecast?appid=1abcb1bd08572a47bf36df6eb8bd6faf&q=Vienna&mode=xml
-3. Ensure the request method is set to GET
-4. Add or confirm the required query parameters:
+    1. Open Postman and create a new GET request
+    2. Insert the following endpoint: api.openweathermap.org/data/2.5/forecast?appid=1abcb1bd08572a47bf36df6eb8bd6faf&q=Vienna&mode=xml
+    3. Ensure the request method is set to GET
+    4. Add or confirm the required query parameters:
    
-     - q: the city name (Vienna)
-     - appid: a valid API key (1abcb1bd08572a47bf36df6eb8bd6faf)
-     - mode: xml
+      - q: the city name (Vienna)
+      - appid: a valid API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+      - mode: xml
        
-6. Click the Send button to execute the request
-7. View the response and verify test results in Postman's Body and Console tabs.
+    6. Click the Send button to execute the request
+    7. View the response and verify test results in Postman's Body and Console tabs.
 
 ### Test Details
 
