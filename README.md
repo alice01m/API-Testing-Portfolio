@@ -1,6 +1,6 @@
 # API-Testing-Portfolio
 
-## Get synonyms for the word "sad"
+## Get synonyms for the word "sad" on https://www.wordsapi.com/ 
 
 
 ### Project Overview
@@ -65,6 +65,42 @@ Headers:
 
 ![API Testing: Get word synonyms (wordsapi)](images/get-word-synonyms.png)
 
+
+---
+
+
+## API Test: Get current weather by city name using [api.openweathermap.org ](https://openweathermap.org/api) 
+
+### Project Overview 
+
+This project contains automated tests for the OpenWeatherMap /data/2.5/weather endpoint, which returns the current weather data for a specific city.
+
+The purpose of this test is to verify:
+
+- That the API returns a successful response (status code 200);
+- That the city name in the response matches the requested city;
+- That essential weather-related properties are present in the response (e.g., temperature, humidity, weather description);
+- That values are in expected formats and units (e.g., temperature in Celsius, language in Romanian).
+
+### Tested Endpoint
+
+GET [https://api.openweathermap.org/data/2.5/weather](https://api.openweathermap.org/data/2.5/weather) 
+
+### Parameters
+
+- q: city name; in this case: 'London'
+- appid: unique API key
+- (Optional) mode: defines the response format; Accepted values are xml and html. If this parameter is not specified, the       API defaults to returning the response in JSON format. 
+- (Optional) units: units of measurement;
+  
+  Temperature is available in Fahrenheit, Celsius and Kelvin units.
+
+    - For temperature in Fahrenheit use units=imperial;
+    - For temperature in Celsius use units=metric;
+  
+    *Temperature in Kelvin is used by default, no need to use units parameter in API call.
+
+- (Optional) lang: specifies the desired language for the response; Translation is applied to selected fields, including the city name and weather description.
 
 
 
