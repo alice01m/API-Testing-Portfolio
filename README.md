@@ -210,7 +210,7 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Project Structure
 
-  -**API Test in Postman:** The request and its automated tests are configured in Postman and can be executed directly. 
+  - **API Test in Postman:** The request and its automated tests are configured in Postman and can be executed directly. 
   - **Validation checks include:**
     
     - Verifying that the API returns a 200 OK response;
