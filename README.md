@@ -289,7 +289,7 @@ GET https://api.openweathermap.org/data/2.5/forecast
 ### Steps to run the test
 
   1. Open Postman and create a new GET request
-  2. Insert the following endpoint: api.openweathermap.org/data/2.5/forecast?appid=1abcb1bd08572a47bf36df6eb8bd6faf&q=Vienna&mode=xml
+  2. Insert the following endpoint: api.openweathermap.org/data/2.5/forecast
   3. Ensure the request method is set to GET
   4. Add or confirm the required query parameters:
    
@@ -302,11 +302,11 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Test Details
 
-  -**Response Status Code:** Confirms that the API returns a 200 OK status, indicating a successful request. 
-  -**Response Format:** Validates that the response is in XML format, as specified by the mode=xml parameter.
-  -**City Verification:** Ensures the <name> tag inside the <location> element corresponds to the requested city (Vienna).
-  -**Forecast Data Presence:** Checks that the response contains multiple <time> elements representing 3-hour forecast intervals.
-  -**Essential Fields Verification:** Each <time> element should include key fields such as:
+  - **Response Status Code:** Confirms that the API returns a 200 OK status, indicating a successful request. 
+  - **Response Format:** Validates that the response is in XML format, as specified by the mode=xml parameter.
+  - **City Verification:** Ensures the <name> tag inside the <location> element corresponds to the requested city (Vienna).
+  - **Forecast Data Presence:** Checks that the response contains multiple <time> elements representing 3-hour forecast intervals.
+  - **Essential Fields Verification:** Each <time> element should include key fields such as:
   
                                       * <temperature> with appropriate values and units
                                       * <humidity> with appropriate values and units
