@@ -236,10 +236,10 @@ GET https://api.openweathermap.org/data/2.5/forecast
 
 ### Test Details
 
-  -**Response Status Code:** Verifies that the API returns a 200 OK status code, indicating the request was successful;
-  -**City Validation:** Confirms that the city returned in the response matches the requested city (Vienna);
-  -**Forecast Interval Verification:** Ensures the weather forecast data is provided in 3-hour intervals, as specified by the API
-  -**Field Presence:** Checks that each forecast entry contains essential fields: 
+  - **Response Status Code:** Verifies that the API returns a 200 OK status code, indicating the request was successful;
+  - **City Validation:** Confirms that the city returned in the response matches the requested city (Vienna);
+  - **Forecast Interval Verification:** Ensures the weather forecast data is provided in 3-hour intervals, as specified by the API
+  - **Field Presence:** Checks that each forecast entry contains essential fields: 
   
     * dt_txt (date and time of the forecast) 
     * main.temp (temperature) 
