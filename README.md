@@ -24,7 +24,7 @@ URL: https://wordsapiv1.p.rapidapi.com/words/sad/synonyms
 Headers:
 
   - x-rapidapi-host: wordsapiv1.p.rapidapi.com
-  - x-rapidapi-key: Your API Key (353b4bad4emsh18da20418167ddbp1154adjsn57bf237f2a94)
+  - x-rapidapi-key: Your API Key 
 
 
 ### Project Structure
@@ -166,7 +166,7 @@ Temperature in Kelvin is used by default, no need to use units parameter in API 
   2. Add the following query parameters:
    
       - q: London
-      - appid: 1abcb1bd08572a47bf36df6eb8bd6faf
+      - appid: your unique API key 
       - units: metric (for Celsius)
       - lang: ro (for Romanian language)
   
@@ -206,7 +206,7 @@ GET https://api.openweathermap.org/data/2.5/forecast
 ### Parameters
 
   - q: City name (Vienna) 
-  - appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf) 
+  - appid: API key 
 
 ### Project Structure
 
@@ -228,7 +228,7 @@ GET https://api.openweathermap.org/data/2.5/forecast
   2. Set the required query parameters:
     
       - q: the city name (Vienna)
-      - appid: unique API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+      - appid: unique API key 
     
   3. Click the "Send" button to run the request
 
@@ -272,7 +272,7 @@ GET https://api.openweathermap.org/data/2.5/forecast
 ### Parameters
 
   - q: City name (Vienna)
-  - appid: API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+  - appid: API key 
   - mode: Response format (xml)
 
 ### Project Structure
@@ -294,7 +294,7 @@ GET https://api.openweathermap.org/data/2.5/forecast
   4. Add or confirm the required query parameters:
    
       - q: the city name (Vienna)
-      - appid: a valid API key (1abcb1bd08572a47bf36df6eb8bd6faf)
+      - appid: a valid API key 
       - mode: xml
        
   6. Click the Send button to execute the request
